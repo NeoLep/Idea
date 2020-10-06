@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>将body中嵌套的第一层div的高设为与body一样高（宽度默认就是一样宽）</title>
+  <style type="text/css">
+    body,
+    ul,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-family: Arial Helvetica, sans-serif, "宋体";
+      font-size: 12px;
+    }
+
+    body {
+      background: #228899;
+    }
+
+    body div {
+      background: #913489;
+    }
+
+    /*下面是实现代码，兼容ie6，ie8，ff*/
+    html,
+    body {
+      height: 100%;
+    }
+
+    body div {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+  </div>
+</body>
+
+</html>
